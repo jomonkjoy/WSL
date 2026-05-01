@@ -29,3 +29,7 @@ wsl --status
 wsl -l -v
 
 Write-Host "Setup complete. Reboot may be required." -ForegroundColor Green
+
+Write-Host "System will reboot in 10 seconds..." -ForegroundColor Yellow
+Start-Sleep -Seconds 10
+Restart-Computer -Force
